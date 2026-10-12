@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Interactive Photo Gallery</h1>
+
+    <!-- Khung hiển thị chính -->
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <!-- Các ảnh thu nhỏ (thumbnails) -->
+    <div class="preview-box">
+        <img class="preview" alt="Cute puppy playing in the grass" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Fluffy kitten resting indoors" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Majestic tiger walking through nature" src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6" onmouseover="upDate(this)" onmouseout="unDo()">
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
